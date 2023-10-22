@@ -1,4 +1,3 @@
-<!-- FILEPATH: /C:/source/messenger/index.html -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,12 +13,16 @@
             
     </head>
     <body>
+        <video id="localVideo" autoplay muted width="50" height="50"></video><br/><br/>
+        <video id="remoteVideo" autoplay width="50" height="50"></video>
+        <button id="rtcCallButton">Call</button>
+        <div id="rtclog"></div>
         <div class="container">
             <div class="chat">
                 <div class="chat-header">
                     <h3>채팅방 제목</h3>
                 </div>
-                <input id="my_name">내 이름</input> 
+                내 이름 <input id="my_name"></input><br/><br/>
                 <div class="chat-body">
                     <li id="messages" style="color: blue;">
                         <div class="message-body">
@@ -36,5 +39,6 @@
             </div>
         </div>
     </body>
+    <script src="js/rtcc.js"></script>
     <script src="js/msg.js"></script>
 </html>

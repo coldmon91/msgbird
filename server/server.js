@@ -13,14 +13,14 @@ var members = [];
 function handle_connection(id, ws) {
     console.log("connected, "+members.length+" members");
     ws.on("message", data => {
-        console.log("echo: " + data);
+        // console.log("echo: " + data);
         members.forEach(function(member) {
             if (member.id == id) return;
-            var trmsg = JSON.stringify({
-                id:id.toString(),
-                msg:data.toString()
-            });
-            member.ws.send(trmsg);
+            // var trmsg = JSON.stringify({
+            //     id:id.toString(),
+            //     msg:data.toString()
+            // });
+            member.ws.send(data);
         });
     })
     ws.close = function() {
