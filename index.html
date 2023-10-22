@@ -1,0 +1,40 @@
+<!-- FILEPATH: /C:/source/messenger/index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Messenger</title>
+        <style>
+            ul {
+                list-style: none;
+            }
+            li {
+                display: block;
+            }
+        </style>
+            
+    </head>
+    <body>
+        <div class="container">
+            <div class="chat">
+                <div class="chat-header">
+                    <h3>채팅방 제목</h3>
+                </div>
+                <input id="my_name">내 이름</input> 
+                <div class="chat-body">
+                    <li id="messages" style="color: blue;">
+                        <div class="message-body">
+                            <div id="message-text"></div>
+                        </div>
+                    </li>
+                    <li id="my_messages" style="color: blueviolet;">
+                    </li>
+                </div>
+                <div class="chat-footer">
+                    <input id="messageInput" type="text" placeholder="메시지를 입력하세요"/>
+                    <button id="sendButton">전송</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/msg.js"></script>
+</html>
