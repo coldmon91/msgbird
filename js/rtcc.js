@@ -89,7 +89,8 @@ function start_rtc() {
         console.log("Disconnected from signaling channel");
     };
     signaling_chan.onmessage = async message => {
-        let data = await message.data.text();
+        // let data = await message.data.text();
+        let data = message.data;
         if (typeof data !== 'string') {
             return;
         }
