@@ -3,7 +3,6 @@ let socket;
 var freader = new FileReader();
 
 let server_url;
-server_url = "ws://152.70.248.252:8081/ws";
 server_url = "ws://localhost:8081/ws";
 const MSGIDS = [ "messages", "my_messages" ];
 
